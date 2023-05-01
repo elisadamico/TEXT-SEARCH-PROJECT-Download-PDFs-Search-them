@@ -10,10 +10,16 @@ library(pdftools)
 url1 <- "sampleurl1.pdf"
 url2 <- "sampleurl2.pdf"
 # And so on…
+# e.g.:
+## url1 <- "http://ucdpged.uu.se/peaceagreements/fulltext/South%20Sudan%2020180627.pdf"
+## url2 <- "http://ucdpged.uu.se/peaceagreements/fulltext/Kyr-Taj%202021-05-02_Ru.pdf"
 
 destfile1 <- "/Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library/pdfsearch/pdf/sampleurl1name.pdf" 
 destfile2 <- "/Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library/pdfsearch/pdf/ sampleurl2name.pdf" 
 # And so on…
+# e.g.:
+## destfile1 <- "/Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library/pdfsearch/pdf/1661.pdf" 
+## destfile2 <- "/Library/Frameworks/R.framework/Versions/4.2-arm64/Resources/library/pdfsearch/pdf/1656.pdf" 
 
 download.file(	url1	, 	destfile1	)
 download.file(	url2	, 	destfile2	)
